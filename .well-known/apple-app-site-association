@@ -1,0 +1,12 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["ZDW9UB53HC.com.plymo.plymo"],
+        "components": [
+          { "/": "/t/*", "comment": "A title shared from Plymo opens in the app." }
+        ]
+      }
+    ]
+  }
+}
