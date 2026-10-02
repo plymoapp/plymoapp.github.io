@@ -2,9 +2,18 @@
   "applinks": {
     "details": [
       {
-        "appIDs": ["ZDW9UB53HC.com.plymo.plymo"],
+        "appIDs": [
+          "ZDW9UB53HC.com.plymo.plymo"
+        ],
         "components": [
-          { "/": "/t/*", "comment": "A title shared from Plymo opens in the app." }
+          {
+            "/": "/t/*",
+            "comment": "A title shared from Plymo opens in the app."
+          },
+          {
+            "/": "/trakt/*",
+            "comment": "Trakt's sign-in returns to the app."
+          }
         ]
       }
     ]
