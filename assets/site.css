@@ -246,3 +246,33 @@ footer img { height: 11px; flex: none; }
 .home h1 { margin-top: 18px; font-size: 30px; }
 .home .pitch { max-width: 360px; margin-top: 12px; }
 .home .actions { width: 100%; max-width: 360px; margin-top: 26px; }
+
+/* The privacy, terms and support pages: a readable document in Arabic,
+   then the same in English below it. */
+.doc { max-width: 720px; }
+.doc-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 20px 0 4px;
+}
+.doc-nav a {
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: var(--card);
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 15px;
+}
+.doc-nav a[aria-current="page"] { background: var(--green); color: var(--on-green); font-weight: 700; }
+.doc article { padding: 4px 0 28px; }
+.doc article + article { border-top: 1px solid var(--line); padding-top: 24px; }
+.doc h1 { font-size: 28px; margin: 18px 0 4px; }
+.doc h2 { font-size: 19px; margin: 28px 0 8px; }
+.doc p, .doc li { font-size: 16px; line-height: 1.9; }
+.doc p { margin: 0 0 12px; }
+.doc ul { margin: 0 0 12px; padding-inline-start: 22px; }
+.doc li { margin: 4px 0; }
+.doc a { color: var(--green); }
+.doc .updated { color: var(--muted); font-size: 14px; margin-bottom: 18px; }
+.doc .contact { background: var(--card); border-radius: var(--radius); padding: 14px 16px; }
