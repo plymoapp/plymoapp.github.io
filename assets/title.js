@@ -16,7 +16,8 @@ const words = {
     minutes: n => `${n} دقيقة`,
     seasons: n => (n === 1 ? 'موسم واحد' : n === 2 ? 'موسمان' : `${n} مواسم`),
     open: 'افتح في Plymo',
-    soon: 'قريبًا على App Store',
+    store: 'حمّله من App Store',
+    badge: '../assets/app-store-ar.svg',
     pitch: 'Plymo يجمع أفلامك ومسلسلاتك وألعابك في مكان واحد: تتابع ما تشاهده، وتقيّمه، ويخبرك بكل حلقة جديدة.',
     missing: 'هذا الرابط ناقص، اطلب من صاحبه يرسله مرة ثانية.',
     failed: 'ما قدرنا نجيب هذا العمل الحين.',
@@ -29,7 +30,8 @@ const words = {
     minutes: n => `${n} min`,
     seasons: n => (n === 1 ? '1 season' : `${n} seasons`),
     open: 'Open in Plymo',
-    soon: 'Coming soon to the App Store',
+    store: 'Download on the App Store',
+    badge: '../assets/app-store-en.svg',
     pitch: 'Plymo keeps your films, series and games in one place: track what you watch, rate it, and hear of every new episode.',
     missing: 'This link is incomplete; ask for it again.',
     failed: "We couldn't load this title just now.",
@@ -54,7 +56,8 @@ function setLanguage() {
   document.documentElement.lang = language;
   document.documentElement.dir = language === 'ar' ? 'rtl' : 'ltr';
   $('open-label').textContent = say.open;
-  $('soon').textContent = say.soon;
+  $('store').src = say.badge;
+  $('store').alt = say.store;
   $('pitch').textContent = say.pitch;
   $('retry').textContent = say.retry;
   $('credit').textContent = kind === 'game' ? say.igdb : say.tmdb;

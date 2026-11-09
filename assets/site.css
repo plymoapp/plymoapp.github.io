@@ -163,13 +163,10 @@ h1 {
 }
 .button.primary { background: var(--green); color: var(--on-green); }
 .button.primary:active { filter: brightness(.92); }
-.button.soon {
-  background: var(--card);
-  color: var(--muted);
-  border: 1px solid var(--line);
-  font-weight: 400;
-  font-size: 15px;
-}
+/* Apple's badge as Apple draws it, at the buttons' height, with room
+   around it. */
+.store { display: flex; justify-content: center; padding: 6px 0; }
+.store img { display: block; height: 54px; width: auto; }
 .button svg { width: 20px; height: 20px; }
 
 .pitch {
